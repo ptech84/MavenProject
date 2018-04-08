@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="89415" started-at="2018-04-08T08:29:54Z" finished-at="2018-04-08T08:31:23Z">
+    <groups>
+      <group name="sample1">
+        <method signature="LoginTest.TestCase1()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="TestCase1" class="com.sv.testng.LoginTest"/>
+      </group> <!-- sample1 -->
+    </groups>
+    <test name="Default test" duration-ms="89415" started-at="2018-04-08T08:29:54Z" finished-at="2018-04-08T08:31:23Z">
+      <class name="com.sv.testng.LoginTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="setExtent" is-config="true" duration-ms="193" started-at="2018-04-08T13:59:54Z" finished-at="2018-04-08T13:59:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="Setup" is-config="true" duration-ms="31207" started-at="2018-04-08T13:59:54Z" finished-at="2018-04-08T14:00:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="TestCase1()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="TestCase1" duration-ms="15647" started-at="2018-04-08T14:00:25Z" finished-at="2018-04-08T14:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase1 -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="tearDown" is-config="true" duration-ms="672" started-at="2018-04-08T14:00:41Z" finished-at="2018-04-08T14:00:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestCase1 status=SUCCESS method=LoginTest.TestCase1()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="Setup" is-config="true" duration-ms="26589" started-at="2018-04-08T14:00:42Z" finished-at="2018-04-08T14:01:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="TestCase1()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="TestCase1" duration-ms="12777" started-at="2018-04-08T14:01:08Z" finished-at="2018-04-08T14:01:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase1 -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="tearDown" is-config="true" duration-ms="631" started-at="2018-04-08T14:01:21Z" finished-at="2018-04-08T14:01:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestCase1 status=SUCCESS method=LoginTest.TestCase1()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="endReport" is-config="true" duration-ms="1677" started-at="2018-04-08T14:01:22Z" finished-at="2018-04-08T14:01:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.sv.testng.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
