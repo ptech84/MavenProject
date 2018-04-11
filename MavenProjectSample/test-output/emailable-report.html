@@ -31,16 +31,63 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">89.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">0</td><td class="numi">28.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">com.sv.testng.LoginTest</td><td><a href="#m1"><b>TestCase1</b> (sample1) </a></td><td class="numi">2</td><td>1523176225745</td><td class="numi">55689</td></tr><tr class="passedodd"><td><a href="#m2"><b>TestCase1</b> (sample1) </a></td><td class="numi">2</td><td>1523176225745</td><td class="numi">55689</td></tr>
+<tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.sv.testng.LoginTest</td><td><a href="#m1"><b>Setup</b>  </a></td><td class="numi">1</td><td>1523259803416</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="3">com.sv.testng.LoginTest</td><td><a href="#m2"><b>Setup</b>  </a></td><td class="numi">1</td><td>1523259831561</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m3"><b>endReport</b>  </a></td><td class="numi">1</td><td>1523259831571</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m4"><b>tearDown</b>  </a></td><td class="numi">2</td><td>1523259831559</td><td class="numi">8</td></tr>
+<tr><th colspan="4">Default test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="2">com.sv.testng.LoginTest</td><td><a href="#m5"><b>TestCase1</b> (sample1) </a></td><td class="numi">2</td><td>1523259831556</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m6"><b>TestCase1</b> (sample1) </a></td><td class="numi">2</td><td>1523259831556</td><td class="numi">8</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">com.sv.testng.LoginTest:TestCase1</h2>
+<h2 id="m1">com.sv.testng.LoginTest:Setup</h2>
+<div style="padding-left:3em">
+<p>Unable to find element with xpath == //a[contains(text(),&apos;Click&apos;)] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.10.0&apos;, revision: &apos;176b4a9&apos;, time: &apos;2018-03-02T19:03:16.397Z&apos;
+System info: host: &apos;BLR1-LP34YG622&apos;, ip: &apos;10.42.28.223&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: false, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:24024/, nativeEvents: true, requireWindowFocus: true}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 2ed30886-4ca1-4646-a264-15333610cf1a
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Click&apos;)]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy11.click(Unknown Source)
+<br/>at com.sv.pages.ServiceViewHomePage.ClickOnClickHereToBeginLink(ServiceViewHomePage.java:28)
+<br/>at com.sv.testng.LoginTest.Setup(LoginTest.java:63)
+<br/>27 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.sv.testng.LoginTest:TestCase1</h2>
+<h2 id="m2">com.sv.testng.LoginTest:endReport</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.sv.testng.LoginTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.sv.testng.LoginTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.sv.testng.LoginTest:Setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.sv.testng.LoginTest:TestCase1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.sv.testng.LoginTest:TestCase1</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

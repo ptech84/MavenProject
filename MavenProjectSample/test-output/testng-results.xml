@@ -1,58 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="2" failed="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="89415" started-at="2018-04-08T08:29:54Z" finished-at="2018-04-08T08:31:23Z">
+  <suite name="Default suite" duration-ms="28445" started-at="2018-04-09T07:43:23Z" finished-at="2018-04-09T07:43:51Z">
     <groups>
       <group name="sample1">
         <method signature="LoginTest.TestCase1()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="TestCase1" class="com.sv.testng.LoginTest"/>
       </group> <!-- sample1 -->
     </groups>
-    <test name="Default test" duration-ms="89415" started-at="2018-04-08T08:29:54Z" finished-at="2018-04-08T08:31:23Z">
+    <test name="Default test" duration-ms="28445" started-at="2018-04-09T07:43:23Z" finished-at="2018-04-09T07:43:51Z">
       <class name="com.sv.testng.LoginTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="setExtent" is-config="true" duration-ms="193" started-at="2018-04-08T13:59:54Z" finished-at="2018-04-08T13:59:54Z">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="setExtent" is-config="true" duration-ms="270" started-at="2018-04-09T13:13:23Z" finished-at="2018-04-09T13:13:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="Setup" is-config="true" duration-ms="31207" started-at="2018-04-08T13:59:54Z" finished-at="2018-04-08T14:00:25Z">
+        <test-method status="FAIL" signature="Setup()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="Setup" is-config="true" duration-ms="0" started-at="2018-04-09T13:13:23Z" finished-at="2018-04-09T13:13:23Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with xpath == //a[contains(text(),'Click')] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'BLR1-LP34YG622', ip: '10.42.28.223', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: false, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:24024/, nativeEvents: true, requireWindowFocus: true}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 2ed30886-4ca1-4646-a264-15333610cf1a
+*** Element info: {Using=xpath, value=//a[contains(text(),'Click')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //a[contains(text(),'Click')] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'BLR1-LP34YG622', ip: '10.42.28.223', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserName: internet explorer, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: false, ie.browserCommandLineSwitches: , ie.enableFullPageScreenshot: true, ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ie.forceShellWindowsApi: false, ie.useLegacyFileUploadDialogHandling: false, ignoreProtectedModeSettings: true, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:24024/, nativeEvents: true, requireWindowFocus: true}, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 2ed30886-4ca1-4646-a264-15333610cf1a
+*** Element info: {Using=xpath, value=//a[contains(text(),'Click')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.sv.pages.ServiceViewHomePage.ClickOnClickHereToBeginLink(ServiceViewHomePage.java:28)
+	at com.sv.testng.LoginTest.Setup(LoginTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="TestCase1()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="TestCase1" duration-ms="15647" started-at="2018-04-08T14:00:25Z" finished-at="2018-04-08T14:00:41Z">
+        <test-method status="SKIP" signature="TestCase1()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="TestCase1" duration-ms="2" started-at="2018-04-09T13:13:51Z" finished-at="2018-04-09T13:13:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase1 -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="tearDown" is-config="true" duration-ms="672" started-at="2018-04-08T14:00:41Z" finished-at="2018-04-08T14:00:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TestCase1 status=SUCCESS method=LoginTest.TestCase1()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-09T13:13:51Z" finished-at="2018-04-09T13:13:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="Setup" is-config="true" duration-ms="26589" started-at="2018-04-08T14:00:42Z" finished-at="2018-04-08T14:01:08Z">
+        <test-method status="SKIP" signature="Setup()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="Setup" is-config="true" duration-ms="0" started-at="2018-04-09T13:13:51Z" finished-at="2018-04-09T13:13:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="TestCase1()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="TestCase1" duration-ms="12777" started-at="2018-04-08T14:01:08Z" finished-at="2018-04-08T14:01:21Z">
+        <test-method status="SKIP" signature="TestCase1()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="TestCase1" duration-ms="1" started-at="2018-04-09T13:13:51Z" finished-at="2018-04-09T13:13:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase1 -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="tearDown" is-config="true" duration-ms="631" started-at="2018-04-08T14:01:21Z" finished-at="2018-04-08T14:01:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TestCase1 status=SUCCESS method=LoginTest.TestCase1()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-09T13:13:51Z" finished-at="2018-04-09T13:13:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="endReport" is-config="true" duration-ms="1677" started-at="2018-04-08T14:01:22Z" finished-at="2018-04-08T14:01:23Z">
+        <test-method status="SKIP" signature="endReport()[pri:0, instance:com.sv.testng.LoginTest@3abbfa04]" name="endReport" is-config="true" duration-ms="0" started-at="2018-04-09T13:13:51Z" finished-at="2018-04-09T13:13:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
